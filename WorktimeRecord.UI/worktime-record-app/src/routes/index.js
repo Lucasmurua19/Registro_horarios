@@ -12,7 +12,7 @@ const routes = createRouter({
     {
         path: '/records',
         name: "records",
-        component: () => import('@modules/workRegistrationTable/views/WorkRegistrationTableView.vue')
+        component: () => import('@modules/workRegistrationTable/view/WorkRegistrationTableView.vue')
     },
 
     { path: '/:pathMatch(.*)*', redirect: '/home_record' }
