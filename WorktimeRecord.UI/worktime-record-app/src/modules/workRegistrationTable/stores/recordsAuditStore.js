@@ -3,7 +3,7 @@ import {ref} from 'vue';
 
 export const useRecordsAuditStore = defineStore('recordsAudit', () => {
     const records = ref([]);
-    const mockedItems = [{ userName : "rserrano", firstName : "Ricardo", lastName : "Serrano velez", lastRecord: new Date("2024-05-01T08:00:00"). toLocalString(), mode: "Entrada" }]
+    const mockedItems = [{ userName : "rserrano", firstName : "Ricardo", lastName : "Serrano velez", lastRecord: new Date("2024-05-01T08:00:00").toLocaleString(), mode: "Entrada" }]
 
     const FakeApi = {
         async fetch(){
@@ -13,7 +13,7 @@ export const useRecordsAuditStore = defineStore('recordsAudit', () => {
     }
 
     async function getRecords(){
-        const result =await FakeAPI.fetch()
+        const result = await FakeApi.fetch()
         records.value = result.items
     }
 
