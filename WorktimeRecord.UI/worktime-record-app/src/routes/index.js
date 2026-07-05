@@ -1,0 +1,22 @@
+import { createRouter, createWebHistory } from 'vue-router'
+
+const routes = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/home_record',
+      name: "home_record",
+      component: () => import('@modules/workRegistration/views/WorkRegistrationView.vue')
+    },
+
+    {
+        path: '/records',
+        name: "records",
+        component: () => import('@modules/workRegistrationTable/views/WorkRegistrationTableView.vue')
+    },
+
+    { path: '/:pathMatch(.*)*', redirect: '/home_record' }
+  ]
+})
+
+export default routes
