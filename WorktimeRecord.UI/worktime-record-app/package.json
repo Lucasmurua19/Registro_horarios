@@ -12,13 +12,14 @@
   },
   "dependencies": {
     "pinia": "^2.1.7",
+    "vue": "^3.4.21",
     "vue-router": "^4.3.0",
-    "vue": "^3.4.21"
+    "vuetify": "^3.12.9"
   },
   "devDependencies": {
     "@rushstack/eslint-config": "^4.6.4",
-    "@vue/eslint-config-prettier": "^9.0.0",
     "@vitejs/plugin-vue": "5.0.4",
+    "@vue/eslint-config-prettier": "^9.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "9.23.0",
     "prettier": "^3.2.5",
